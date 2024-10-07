@@ -34,7 +34,7 @@
               <h1>
                 Tan-Dzung (Chris) Do
               </h1>
-              <p>I am a Master's student at the School of Computer Science, <a href="https://www.pku.edu.cn/">Peking University</a>, where I work on Embodied AI. I'm fortunate to work with <a href="hughw19.github.io">Prof. He Wang</a>.
+              <p>I am a Master's student at the School of Computer Science, <a href="https://www.pku.edu.cn/">Peking University</a>, where I work on Embodied AI. I'm fortunate to work with <a href="https://hughw19.github.io">Prof. He Wang</a>.
               </p>
               <p>Reach out to me at: dotandung@stu.pku.edu.cn</a>.
               </p>
@@ -72,10 +72,21 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+              {% if post.vid %}
+              <a href={{post.website}}>
+                <video style="width:auto; height:auto; max-width:100%;" muted autoplay preload="auto">
+                  <source src="/tn{{post.vid}}" type="video/mp4">
+                </video>
+              </a>
+              {% endif %}
+              {% if post.image %}
+              <a href={{post.website}}>
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
+              {% endif %}
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            
+            <td style="padding:2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
