@@ -1,11 +1,6 @@
 _site
-.DS_Store
-.jekyll
-.jekyll-metadata
-.bundle
 .sass-cache
-Gemfile
+.jekyll-cache
+.jekyll-metadata
+vendor
 Gemfile.lock
-node_modules
-package.json
-favicon.ico
