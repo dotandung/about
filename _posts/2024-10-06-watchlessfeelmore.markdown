@@ -6,6 +6,6 @@ categories: research
 author: "Tan-Dzung Do"
 authors: "<strong>Tan-Dzung Do</strong>, Gireesh Nandiraju, Jilong Wang, He Wang"
 vid: /videos/watchlessfeelmore.mp4
-venue: "arxiv"
+venue: "Under Review"
 website: https://watch-less-feel-more.github.io/
 ---
