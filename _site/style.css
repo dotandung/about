@@ -1,7 +1,7 @@
 /**************/
 /* BASE RULES */
 /**************/
-a { color: #3e3e3f; text-decoration: none; }
+a { color: #2e2e2d; text-decoration: none; }
 
 a:focus, a:hover { color: #0e73d1; text-decoration: none; }
 
@@ -23,4 +23,4 @@ h1 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 40px; fon
 
 .fade { transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; }
 
-span.highlight { background-color: #ffffd0; }
+span.highlight { background-color: #ecece9; }

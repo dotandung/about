@@ -13,7 +13,7 @@
 /* BASE RULES */
 /**************/
 a {
-  color: #3e3e3f;
+  color: #2e2e2d;
   text-decoration: none;
 }
 
@@ -104,8 +104,12 @@ h1 {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #ecece9;
 }
+
+// * {
+//   color:  #faf7f2;
+// }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
