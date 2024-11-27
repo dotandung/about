@@ -21,6 +21,11 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -62,7 +67,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
-              <p>Currently I'm interested in Fine/Dexterous Manipulation and Mobile Manipulation, and which approach, sim2real or demonstrations would be the ultimate solution for Generalist Robots 🤖. Towards this goal, I think it's crutial that we learn how to better leverage familiar modalities like vision 👀 or language 💬, while touching other important yet underexplored modalities like tactile 👉🏻👈🏻 or sound 👂🏻.</p>
+              <p>Currently I'm interested in Fine/Dexterous Manipulation and Mobile Manipulation, and which approach, sim2real or demonstrations would be the ultimate solution for Generalist Robots 🤖. Towards this goal, I think it's crucial that we learn how to better leverage familiar modalities like vision 👀 or language 💬, while touching other important yet underexplored modalities like tactile 👉🏻👈🏻 or sound 👂🏻.</p>
             </td>
           </tr>
         </table>
@@ -87,7 +92,7 @@
             </td>
             
             <td style="padding:2.5%;width:65%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <strong>{{post.title}}</strong>
               <br>
               {{post.authors}}
 
@@ -127,8 +132,7 @@
           {% endfor %}
         </table>
         <br>
-        <br>
-        <br>
+
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -193,9 +197,6 @@
           {% endfor %}
           {% endfor %} -->
         <!-- </table> -->
-        <br>
-        <br>
-        <br>
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -274,7 +275,7 @@
           <tr>
             <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/peking_university.png", width="90%"></td>
             <td width="80%" valign="center">
-              <b><a href="https://pku.edu.cn/">Peking University</a></b> 🇨🇳
+              <a href="https://pku.edu.cn/" style="font-size: 18px; font-weight: 700;">Peking University</a> 🇨🇳
               <br> 2022.09 - Present 
               <br><strong>MSc Student in Computer Science</strong>
               <br> Advisor: Prof. <a href="https://hughw19.github.io/">He Wang</a>
@@ -283,7 +284,7 @@
           <tr>
             <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/bmstu.png", width="90%"></td>
             <td width="80%" valign="center">
-              <b><a href="https://bmstu.ru/">Bauman Moscow State Technical University</a></b> 🇷🇺
+              <a href="https://bmstu.ru/" style="font-size: 18px; font-weight: 700;">Bauman Moscow State Technical University</a> 🇷🇺
               <br> 2018.09 - 2022.07 
               <br><strong>B.S. in Computer Engineering</strong>
               <br> Graduation with Honours (красный диплом) 
@@ -305,7 +306,7 @@
           <tr>
             <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/galbot.svg", width="90%"></td>
             <td width="80%" valign="center">
-              <b><a href="https://galbot.com/">Galbot</a></b> 
+              <a href="https://galbot.com/" style="font-size: 18px; font-weight: 700;">Galbot</a>
               <br> Beijing 🇨🇳
               <br> 2023.09 - Present
               <br><strong>Internship</strong>
@@ -315,9 +316,9 @@
           <tr>
             <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/cfcs.jpeg", width="90%"></td>
             <td width="80%" valign="center">
-              <b><a href="https://cfcs.pku.edu.cn/english/">Center on Frontiers of Computing Studies, Peking University</a></b> 
+              <a href="https://cfcs.pku.edu.cn/english/" style="font-size: 18px; font-weight: 700;">Center on Frontiers of Computing Studies, Peking University</a>
               <br> Beijing 🇨🇳
-              <br> 2023.02 - 2023.08
+              <br> 2023.02 - Present
               <br><strong>Internship</strong>
               <br> Advisor: Prof. <a href="https://hughw19.github.io/">He Wang</a>
             </td>
@@ -325,7 +326,7 @@
           <tr>
             <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/wq.jpeg", width="90%"></td>
             <td width="80%" valign="center">
-              <b><a href="https://www.worldquant.com/">WorldQuant</a></b> 
+              <a href="https://worldquant.com/" style="font-size: 18px; font-weight: 700;">WorldQuant</a>
               <br> Hanoi 🇻🇳
               <br> 2022.09 - 2023.02
               <br><strong>Internship</strong>
@@ -339,6 +340,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Awards and Honors</h2>
+                <p><li>Beijing Government Scholarship, 2024</li></p>
                 <p><li>Beijing Government Scholarship, 2023</li></p>
                 <p><li>Beijing Government Scholarship, 2022</li></p>
                 <p><li>Vietnam-Russia Government Scholarship, 2018</li></p>
@@ -372,7 +374,7 @@
                   I speak Vietnamese 🇻🇳, Mandarin Chinese 🇨🇳, English 🦅, and Russian 🇷🇺
                 </p>
                 <p>  
-                  Moving from one country to another makes my name ending up having so many variations. My Vietnamese name is Đỗ Tấn Dũng, pronounced like Dzung as in my publishing name. Then Russian people would call me До or Зунг depending how they well know me. Then in China, I need to choose another Chinese name, 杜迅勇 (Du Xunyong).
+                  Moving from one country to another makes my name ending up having so many variations. My Vietnamese name is Đỗ Tấn Dũng, pronounced like Dzung as in my publishing name. Then Russian people would call me До or Зунг depending how well they know me. Then in China, I need to choose another Chinese name, 杜迅勇 (Du Xunyong).
                   
                 </p>
             </td>
