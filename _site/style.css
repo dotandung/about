@@ -5,15 +5,15 @@ a { color: #2e2e2d; text-decoration: none; }
 
 a:focus, a:hover { color: #0e73d1; text-decoration: none; }
 
-body, td, th, tr, p { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-weight: 400; font-size: 14px; font-display: auto; }
+body, td, th, tr, p { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-weight: 400; font-size: 15px; font-display: auto; }
 
-a { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-weight: 400; font-size: 14px; font-display: auto; }
+a { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-weight: 400; font-size: 15px; font-display: auto; }
 
-strong { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-size: 14px; font-display: auto; font-weight: 600; }
+strong { font-family: 'Raleway', Verdana, Helvetica, sans-serif; font-size: 15px; font-display: auto; font-weight: 600; }
 
 h2 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 26px; font-display: auto; font-weight: 700; padding: 0px; margin: 0px; display: inline; }
 
-h3 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: 700; font-display: auto; padding: 0px; margin: 0px; display: inline; }
+h3 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 15px; font-weight: 700; font-display: auto; padding: 0px; margin: 0px; display: inline; }
 
 h1 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 40px; font-weight: 700; font-display: auto; text-align: center; padding: 0px; margin-block-start: 14px; margin-block-end: 14px; margin-left: 0px; margin-right: 0px; }
 
