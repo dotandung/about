@@ -107,6 +107,22 @@ span.highlight {
   background-color: #ecece9;
 }
 
+.back-video{
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+}
+
+body {
+  // background-image: url("./images/army.png");
+  background-color: #0b0b0b;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+ }
+
 // * {
 //   color:  #faf7f2;
 // }
