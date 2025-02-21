@@ -7,6 +7,6 @@ authors: <a href="https://dotandung.github.io"><strong>Tan-Dzung Do</strong></a>
 vid: /videos/watchlessfeelmore.mp4
 venue:  <a href="https://2025.ieee-icra.org/">ICRA 2025</a>, <a href="https://www.corl.org/CoRL 2024">CoRL 2024</a> <a href="https://www.dynsyslab.org/mastering-robot-manipulation-in-a-world-of-abundant-data/">@MRM-D</a>, <a href="https://dex-manipulation.github.io/corl2024/">@LFDM</a>
 website: https://watch-less-feel-more.github.io/
-pdf: https://watch-less-feel-more.github.io/
+pdf: https://arxiv.org/abs/2502.14457/
 code: https://watch-less-feel-more.github.io/
 ---
