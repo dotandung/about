@@ -29,11 +29,11 @@
 
 </head>
 
-<!-- <body style="background-color:#012f3c"> -->
+<body style="background-color:#dee0e1">
 <body>
-  <video autoplay preload="auto" muted loop class="back-video">
+  <!-- <video autoplay preload="auto" muted loop class="back-video">
     <source src="/tn/videos/sza.mp4" type="video/mp4">
-  </video>
+  </video> -->
   
   <table style="width:100%;max-width:650px;min-width:35%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:white;border-radius:25px;">
     <tr style="padding:0px">
@@ -65,7 +65,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:35%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/xunyong_profile_3.jpg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/xunyong_profile_4.jpg">
             </td>
           </tr>
         </table>
@@ -82,12 +82,12 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          <!-- {% if cat == 'research' %} -->
           <tr>
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
               {% if post.vid %}
               <a href={{post.website}}>
-                <video style="width:auto; height:auto; max-width:100%;" muted autoplay preload="auto">
+                <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
                   <source src="/tn{{post.vid}}" type="video/mp4">
                 </video>
               </a>
@@ -134,7 +134,7 @@
               {{ post.excerpt }}
             </td>
           </tr>
-          {% endif %}
+          <!-- {% endif %} -->
           {% endfor %}
           {% endfor %}
         </table>
