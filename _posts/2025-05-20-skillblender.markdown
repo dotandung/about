@@ -7,7 +7,7 @@ authors: <a href="https://yuxuank.com/">Yuxuan Kuang</a>, <a href="https://geng-
 vid: /videos/skillblender.mp4?v=2
 # venue:  <a href="https://2025.ieee-icra.org/">ICRA 2025</a>, <a href="https://www.corl.org/CoRL 2024">CoRL 2024</a> <a href="https://www.dynsyslab.org/mastering-robot-manipulation-in-a-world-of-abundant-data/">@MRM-D</a>, <a href="https://dex-manipulation.github.io/corl2024/">@LFDM</a>
 venue:  Under Review
-website: https://skillblender-anon.github.io/
-pdf: https://skillblender-anon.github.io/
-code: https://skillblender-anon.github.io/
+website: https://usc-gvl.github.io/SkillBlender-web/
+pdf: https://arxiv.org/abs/2506.09366
+code: https://github.com/Humanoid-SkillBlender/SkillBlender
 ---
