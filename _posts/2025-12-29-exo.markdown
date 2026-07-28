@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "On Exoskleleton-aided Data for Humanoid Loco-manipulation"
-categories: research
+categories: project
 author: "Tan-Dzung Do"
 authors: <a href="https://dotandung.github.io/about/">Yiming Wang</a>, <a href="https://dotandung.github.io/about/">Tan-Dzung Do</a>, <a href="https://changhaonan.github.io/">Haonan Chang</a>, <a href="https://yuewang.xyz/">Yue Wang</a>
 vid: /videos/exoskeleton.mp4
 # venue:  <a href="https://2025.ieee-icra.org/">ICRA 2025</a>, <a href="https://www.corl.org/CoRL 2024">CoRL 2024</a> <a href="https://www.dynsyslab.org/mastering-robot-manipulation-in-a-world-of-abundant-data/">@MRM-D</a>, <a href="https://dex-manipulation.github.io/corl2024/">@LFDM</a>
-venue:  In Preparation
+venue:
 # website: https://usc-gvl.github.io/SkillBlender-web/
 # pdf: https://arxiv.org/abs/2506.09366
 # code: https://github.com/Humanoid-SkillBlender/SkillBlender
