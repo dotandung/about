@@ -102,13 +102,13 @@
               {% if post.vid %}
               <a href={{post.website}}>
                 <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
-                  <source src="/tn{{post.vid}}" type="video/mp4">
+                  <source src="tn{{post.vid}}" type="video/mp4">
                 </video>
               </a>
               {% endif %}
               {% if post.image %}
               <a href={{post.website}}>
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
+              <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
               {% endif %}
             </td>
 
@@ -156,7 +156,7 @@
 
         <details class="other-projects">
           <summary style="cursor:pointer; list-style:none; padding:2.5%;">
-            <h2 style="display:inline;">Other Projects <span class="toggle-marker">&#9656;</span></h2>
+            <h3 style="display:inline;">Other Projects <span class="toggle-marker">&#9656;</span></h3>
           </summary>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
@@ -168,13 +168,13 @@
                 {% if post.vid %}
                 <a href={{post.website}}>
                   <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
-                    <source src="/tn{{post.vid}}" type="video/mp4">
+                    <source src="tn{{post.vid}}" type="video/mp4">
                   </video>
                 </a>
                 {% endif %}
                 {% if post.image %}
                 <a href={{post.website}}>
-                <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
+                <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
                 {% endif %}
               </td>
 
@@ -237,7 +237,7 @@
           {% if cat == 'Intel' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -301,7 +301,7 @@
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
