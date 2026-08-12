@@ -1,3 +1,9 @@
+/*************/
+/* VARIABLES */
+/*************/
+/* Tweak these to restyle the venue tag site-wide. */
+:root { --venue-bg: #fad3d3; --venue-color: #3a3939; --venue-radius: 6px; --venue-padding: 2px 8px; }
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -24,6 +30,12 @@ h1 { font-family: 'Oxygen', Verdana, Helvetica, sans-serif; font-size: 40px; fon
 .fade { transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; }
 
 span.highlight { background-color: #ecece9; }
+
+/* Uniform thumbnails for research / project entries. Sources come in mixed ratios (16:9, 4:3, 1:1), so pin a single box and center-crop whatever does not fit. */
+.thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; background-color: #000; }
+
+/* Venue tag on research / project entries. */
+.venue { display: inline-block; background-color: var(--venue-bg); color: var(--venue-color); border-radius: var(--venue-radius); padding: var(--venue-padding); margin: 2px 0; }
 
 .back-video { right: 0; bottom: 0; z-index: -1; width: 100%; height: 100%; position: fixed; object-fit: cover; }
 

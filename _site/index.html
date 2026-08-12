@@ -28,20 +28,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
-    details.other-projects summary { outline: none; }
-    details.other-projects summary::-webkit-details-marker { display: none; }
-    details.other-projects .toggle-marker {
+    details.other-projects summary,
+    details.bio-toggle summary { outline: none; }
+    details.other-projects summary::-webkit-details-marker,
+    details.bio-toggle summary::-webkit-details-marker { display: none; }
+    details.other-projects .toggle-marker,
+    details.bio-toggle .toggle-marker {
       display: inline-block;
       transition: transform 0.2s ease;
     }
-    details.other-projects[open] .toggle-marker {
+    details.other-projects[open] .toggle-marker,
+    details.bio-toggle[open] .toggle-marker {
       transform: rotate(90deg);
     }
+    details.bio-toggle p { margin-top: 8px; }
   </style>
 
 </head>
 
-<body style="background-color:#220404">
+<body style="background-color:#500f0f">
 <body>
   <!-- <video autoplay preload="auto" muted loop class="back-video">
     <source src="/tn/videos/sza.mp4" type="video/mp4">
@@ -56,11 +61,16 @@
               <h1>
                 Tan-Dzung <br>(Chris) Do
               </h1>
-              <p>I am a Research Intern based in the Bay Area 🇺🇸 where I take part in some interesting Humanoid Loco-Manipulation 🦾 projects with <a href="https://yuewang.xyz">Prof. Yue Wang</a>.
+              <p>I am a Researcher at <a href="https://vinrobotics.net">VinRobotics 🇻🇳</a> working on Embodied AI 🦾 with <a href="https://anindex.github.io">Prof. An Thai Le</a>.
               </p>
-              <p>I recently graduated from <a href="https://cs.pku.edu.cn/English/Home.htm">the School of Computer Science</a>, <a href="https://www.pku.edu.cn/">Peking University</a> 🇨🇳 where I worked with <a href="https://hughw19.github.io">Prof. He Wang</a>. I was also a member of a joint humanoid research lab co-led by <a href="https://ericyi.github.io/">Prof. Li Yi</a>.
-              </p>
-              <p>I am from Vietnam 🇻🇳
+              <p>I previously graduated from <a href="https://cs.pku.edu.cn/English/Home.htm">the School of Computer Science</a>, <a href="https://www.pku.edu.cn/">Peking University</a> 🇨🇳 where I worked with <a href="https://hughw19.github.io">Prof. He Wang</a>.
+              <details class="bio-toggle">
+                <summary style="cursor:pointer; list-style:none;">
+                  <a style="display:inline;color: #6e0d0d;">...</a>
+                </summary>
+                <p>After graduation, I interned in the Bay Area 🇺🇸 where I take part in some interesting Humanoid Loco-Manipulation projects with <a href="https://yuewang.xyz">Prof. Yue Wang (USC)</a>. During my time at Galbot,  I was also a member of a joint humanoid research lab co-led by <a href="https://ericyi.github.io/">Prof. Li Yi (Tsinghua)</a>. Long ago, I had a wonderful time interning at a quant firm with <a href="https://scholar.google.com/citations?user=O0GvP1IAAAAJ&hl=en">Dr. Luan Tran</a>.
+                </p>
+              </details>
               </p>
               <!-- <p>Prior to this, I got my BEng in Computer Engineering from <a href="https://bmstu.ru/">Bauman Moscow State Technical University</a></b>, Russia 🇷🇺. Then I interned at a Quant firm for a while before moving to Beijing 🇨🇳 for my Master's study.
               </p> -->
@@ -97,6 +107,46 @@
           
           
           
+          <tr>
+            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+              
+              <a href=https://crossbfm.github.io/>
+                <video class="thumb" muted autoplay loop preload="auto" playsinline>
+                  <source src="tn/videos/crossbfm.mp4" type="video/mp4">
+                </video>
+              </a>
+              
+              
+            </td>
+
+            <td style="padding:2.5%;width:65%;vertical-align:middle">
+              <strong>CrossBFM: Distilling a Shared Latent Behavior Space Across Humanoid Embodiments</strong>
+              <br>
+              <p style="margin:5px;"></p>
+              <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://tuandattt.github.io/">Tuan Dat Phuong</a>, <a href="https://kookie14.github.io/kookie14/">Cuc T.Trinh</a>, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
+              <br>
+              <i class="venue">Under Review | ECCV 2026 HuMoWM Workshop</i>
+              <br>
+              
+              
+              
+              
+              
+              
+              
+              <a href="https://crossbfm.github.io/">website</a> /
+              
+              
+              <p></p>
+              
+
+            </td>
+          </tr>
+          
+          
+          
+          
+          
           
           
           
@@ -105,7 +155,7 @@
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
               
               <a href=https://compliantwbc.github.io/>
-                <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                <video class="thumb" muted autoplay loop preload="auto" playsinline>
                   <source src="tn/videos/compliantwbc.mp4" type="video/mp4">
                 </video>
               </a>
@@ -117,9 +167,9 @@
               <strong>CompliantWBC: Whole-Body Compliance for Heavy Humanoids via Force Latent Estimation and Residual Impedance Targets</strong>
               <br>
               <p style="margin:5px;"></p>
-              <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, Cuc T.Trinh, Tuan Dat Phuong, Truong-Duy Dang, Chien Le, Thanh Ly, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
+              <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://kookie14.github.io/kookie14/">Cuc T.Trinh</a>, <a href="https://tuandattt.github.io/">Tuan Dat Phuong</a>, Truong-Duy Dang, Chien Le, Thanh Ly, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
               <br>
-              <i>Under Review</i>
+              <i class="venue">Under Review | ECCV 2026 EMR & WMEAI Workshop</i>
               <br>
               
               
@@ -149,7 +199,7 @@
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
               
               <a href=https://watch-less-feel-more.github.io/>
-                <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                <video class="thumb" muted autoplay loop preload="auto" playsinline>
                   <source src="tn/videos/watchlessfeelmore.mp4" type="video/mp4">
                 </video>
               </a>
@@ -163,7 +213,7 @@
               <p style="margin:5px;"></p>
               <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://user432.github.io/">Gireesh Nandiraju</a>, <a href="https://42jaylonw.github.io/">Jilong Wang</a>, <a href="https://hughw19.github.io/">He Wang</a>
               <br>
-              <i>ICRA 2025, CoRL 2024 MRM-D & LFDM Workshops</i>
+              <i class="venue">ICRA 2025 | CoRL 2024 MRM-D & LFDM Workshops</i>
               <br>
               
               
@@ -193,7 +243,7 @@
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
               
               <a href=https://usc-gvl.github.io/SkillBlender-web/>
-                <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                <video class="thumb" muted autoplay loop preload="auto" playsinline>
                   <source src="tn/videos/skillblender.mp4" type="video/mp4">
                 </video>
               </a>
@@ -207,7 +257,7 @@
               <p style="margin:5px;"></p>
               <a href="https://yuxuank.com/">Yuxuan Kuang</a>, <a href="https://geng-haoran.github.io/">Haoran Geng</a>, <a href="https://stanfordasl.github.io//people/amine-elhafsi/">Amine Elhafsi</a>, <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>, <a href="https://profiles.stanford.edu/marco-pavone">Marco Pavone</a>, <a href="https://yuewang.xyz/">Yue Wang</a>
               <br>
-              <i>RSS 2025 WCBM Workshop</i>
+              <i class="venue">RSS 2025 WCBM Workshop</i>
               <br>
               
               
@@ -243,11 +293,15 @@
             
             
             
+            
+            
+            
+            
             <tr>
               <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
                 
                 <a href=https://fai-rl-tech.github.io/tact-locomotion.github.io/>
-                  <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                  <video class="thumb" muted autoplay loop preload="auto" playsinline>
                     <source src="tn/videos/tactful.mp4" type="video/mp4">
                   </video>
                 </a>
@@ -259,9 +313,9 @@
                 <strong>TACTful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion</strong>
                 <br>
                 <p style="margin:5px;"></p>
-                Thanh Ly, Truong-Duy Dang, Chien Le, <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, Tuan Dat Phuong, Cuc T.Trinh, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
+                Thanh Ly, Truong-Duy Dang, Chien Le, <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://tuandattt.github.io/">Tuan Dat Phuong</a>, <a href="https://kookie14.github.io/kookie14/">Cuc T.Trinh</a>, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
                 <br>
-                <i>Under Review</i>
+                <i class="venue">Under Review | ECCV 2026 EMR Workshop</i>
                 <br>
                 
                 
@@ -291,7 +345,7 @@
               <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
                 
                 <a href=>
-                  <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                  <video class="thumb" muted autoplay loop preload="auto" playsinline>
                     <source src="tn/videos/exoskeleton.mp4" type="video/mp4">
                   </video>
                 </a>
@@ -305,7 +359,7 @@
                 <p style="margin:5px;"></p>
                 <a href="https://dotandung.github.io/about/">Yiming Wang</a>, <a href="https://dotandung.github.io/about/">Tan-Dzung Do</a>, <a href="https://changhaonan.github.io/">Haonan Chang</a>, <a href="https://yuewang.xyz/">Yue Wang</a>
                 <br>
-                <i></i>
+                <i class="venue">In-house product</i>
                 <br>
                 
                 
@@ -366,6 +420,10 @@
           
           
           
+          
+          
+          
+          
            -->
         <!-- </table> -->
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -380,6 +438,10 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"> -->
 
           <!-- 
+          
+          
+          
+          
           
           
           <tr>

@@ -28,20 +28,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
-    details.other-projects summary { outline: none; }
-    details.other-projects summary::-webkit-details-marker { display: none; }
-    details.other-projects .toggle-marker {
+    details.other-projects summary,
+    details.bio-toggle summary { outline: none; }
+    details.other-projects summary::-webkit-details-marker,
+    details.bio-toggle summary::-webkit-details-marker { display: none; }
+    details.other-projects .toggle-marker,
+    details.bio-toggle .toggle-marker {
       display: inline-block;
       transition: transform 0.2s ease;
     }
-    details.other-projects[open] .toggle-marker {
+    details.other-projects[open] .toggle-marker,
+    details.bio-toggle[open] .toggle-marker {
       transform: rotate(90deg);
     }
+    details.bio-toggle p { margin-top: 8px; }
   </style>
 
 </head>
 
-<body style="background-color:#220404">
+<body style="background-color:#500f0f">
 <body>
   <!-- <video autoplay preload="auto" muted loop class="back-video">
     <source src="/tn/videos/sza.mp4" type="video/mp4">
@@ -56,11 +61,16 @@
               <h1>
                 Tan-Dzung <br>(Chris) Do
               </h1>
-              <p>I am a Research Intern based in the Bay Area 🇺🇸 where I take part in some interesting Humanoid Loco-Manipulation 🦾 projects with <a href="https://yuewang.xyz">Prof. Yue Wang</a>.
+              <p>I am a Researcher at <a href="https://vinrobotics.net">VinRobotics 🇻🇳</a> working on Embodied AI 🦾 with <a href="https://anindex.github.io">Prof. An Thai Le</a>.
               </p>
-              <p>I recently graduated from <a href="https://cs.pku.edu.cn/English/Home.htm">the School of Computer Science</a>, <a href="https://www.pku.edu.cn/">Peking University</a> 🇨🇳 where I worked with <a href="https://hughw19.github.io">Prof. He Wang</a>. I was also a member of a joint humanoid research lab co-led by <a href="https://ericyi.github.io/">Prof. Li Yi</a>.
-              </p>
-              <p>I am from Vietnam 🇻🇳
+              <p>I previously graduated from <a href="https://cs.pku.edu.cn/English/Home.htm">the School of Computer Science</a>, <a href="https://www.pku.edu.cn/">Peking University</a> 🇨🇳 where I worked with <a href="https://hughw19.github.io">Prof. He Wang</a>.
+              <details class="bio-toggle">
+                <summary style="cursor:pointer; list-style:none;">
+                  <a style="display:inline;color: #6e0d0d;">...</a>
+                </summary>
+                <p>After graduation, I interned in the Bay Area 🇺🇸 where I take part in some interesting Humanoid Loco-Manipulation projects with <a href="https://yuewang.xyz">Prof. Yue Wang (USC)</a>. During my time at Galbot,  I was also a member of a joint humanoid research lab co-led by <a href="https://ericyi.github.io/">Prof. Li Yi (Tsinghua)</a>. Long ago, I had a wonderful time interning at a quant firm with <a href="https://scholar.google.com/citations?user=O0GvP1IAAAAJ&hl=en">Dr. Luan Tran</a>.
+                </p>
+              </details>
               </p>
               <!-- <p>Prior to this, I got my BEng in Computer Engineering from <a href="https://bmstu.ru/">Bauman Moscow State Technical University</a></b>, Russia 🇷🇺. Then I interned at a Quant firm for a while before moving to Beijing 🇨🇳 for my Master's study.
               </p> -->
@@ -101,14 +111,14 @@
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
               {% if post.vid %}
               <a href={{post.website}}>
-                <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                <video class="thumb" muted autoplay loop preload="auto" playsinline>
                   <source src="tn{{post.vid}}" type="video/mp4">
                 </video>
               </a>
               {% endif %}
               {% if post.image %}
               <a href={{post.website}}>
-              <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
+              <img class="thumb" src="tn{{post.image}}" alt="project image" /></a>
               {% endif %}
             </td>
 
@@ -118,7 +128,7 @@
               <p style="margin:5px;"></p>
               {{post.authors}}
               <br>
-              <i>{{post.venue}}</i>
+              <i class="venue">{{post.venue}}</i>
               <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
@@ -167,14 +177,14 @@
               <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
                 {% if post.vid %}
                 <a href={{post.website}}>
-                  <video style="width:auto; height:auto; max-width:100%;" muted autoplay loop preload="auto">
+                  <video class="thumb" muted autoplay loop preload="auto" playsinline>
                     <source src="tn{{post.vid}}" type="video/mp4">
                   </video>
                 </a>
                 {% endif %}
                 {% if post.image %}
                 <a href={{post.website}}>
-                <img src="tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
+                <img class="thumb" src="tn{{post.image}}" alt="project image" /></a>
                 {% endif %}
               </td>
 
@@ -184,7 +194,7 @@
                 <p style="margin:5px;"></p>
                 {{post.authors}}
                 <br>
-                <i>{{post.venue}}</i>
+                <i class="venue">{{post.venue}}</i>
                 <br>
                 {% if post.arxiv %}
                 <a href="{{post.arxiv}}">arxiv</a> /

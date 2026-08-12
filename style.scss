@@ -9,6 +9,17 @@
 //@import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+/*************/
+/* VARIABLES */
+/*************/
+/* Tweak these to restyle the venue tag site-wide. */
+:root {
+  --venue-bg: #fad3d3;
+  --venue-color: #3a3939;
+  --venue-radius: 6px;
+  --venue-padding: 2px 8px;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -110,6 +121,28 @@ h1 {
 
 span.highlight {
   background-color: #ecece9;
+}
+
+/* Uniform thumbnails for research / project entries.
+   Sources come in mixed ratios (16:9, 4:3, 1:1), so pin a single box and
+   center-crop whatever does not fit. */
+.thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  background-color: #000;
+}
+
+/* Venue tag on research / project entries. */
+.venue {
+  display: inline-block;
+  background-color: var(--venue-bg);
+  color: var(--venue-color);
+  border-radius: var(--venue-radius);
+  padding: var(--venue-padding);
+  margin: 2px 0;
 }
 
 .back-video{

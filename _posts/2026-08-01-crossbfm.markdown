@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "CrossBFM: Distilling a Shared Latent Behavior Space Across Humanoid Embodiments"
+categories: research
+author: "Tan-Dzung Do"
+authors: <a href="https://dotandung.github.io/about/"><strong>Tan-Dzung Do</strong></a>, <a href="https://tuandattt.github.io/">Tuan Dat Phuong</a>, <a href="https://kookie14.github.io/kookie14/">Cuc T.Trinh</a>, <a href="https://vienngo.github.io/">Vien Anh Ngo</a>, <a href="https://anindex.github.io/">An Thai Le</a>
+vid: /videos/crossbfm.mp4
+venue:  Under Review | ECCV 2026 HuMoWM Workshop
+website: https://crossbfm.github.io/
+# pdf: https://arxiv.org/abs/2506.09366
+# code: https://github.com/Humanoid-SkillBlender/SkillBlender
+---
